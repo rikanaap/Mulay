@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/constraintMusicWrapper"
+    android:layout_width="130dp"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_margin="5dp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageSetMusicCover"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:shapeAppearanceOverlay="@style/roundImageCover"
+        android:src="@color/gray"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_round_musicpage"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageSetMusicCover">
+        <TextView
+            android:id="@+id/textSetMusicTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music Title"
+            android:fontFamily="@font/inter_extrabold"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textSetMusicPublisher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/inter_regular"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:text="Publisher Username"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toStartOf="@id/textSetMusicDuration"
+            app:layout_constraintStart_toStartOf="@id/textSetMusicTitle"
+            app:layout_constraintTop_toBottomOf="@id/textSetMusicTitle" />
+        <TextView
+            android:id="@+id/textSetMusicDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16.04"
+            android:textSize="8sp"
+            app:layout_constraintTop_toTopOf="@id/textSetMusicPublisher"
+            android:maxLength="5"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/textSetMusicTitle"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

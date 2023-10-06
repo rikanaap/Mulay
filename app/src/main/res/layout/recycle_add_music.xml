@@ -1,0 +1,72 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constrainAddWrapper"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_music"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageSetMusicCoverAdd"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:shapeAppearanceOverlay="@style/roundGenreCorner"
+        android:src="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageSetMusicCoverAdd"
+        app:layout_constraintEnd_toStartOf="@id/switchPublicityAdd"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:id="@+id/textSetMusicTitleAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_bold"
+            android:text="Music title"
+            android:maxLength="100"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/imageSetMusicCoverAdd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textSetMusicReleaseDateAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/outfit_regular"
+            android:text="yyy-mm-dd"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/textSetMusicTitleAdd"
+            app:layout_constraintTop_toBottomOf="@+id/textSetMusicTitleAdd" />
+    </LinearLayout>
+
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switchPublicityAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:textOn="Public"
+        android:layout_marginEnd="10dp"
+        android:textOff="Private"
+        app:switchTextAppearance="@style/switchText"
+        android:thumb="@drawable/switch_thumb"
+        app:track="@drawable/switch_track"
+        app:showText="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

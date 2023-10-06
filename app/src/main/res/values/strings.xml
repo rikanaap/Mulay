@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Mulay</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="decide_text">Unlock the magic of music with a single tap.\nOpen our app and let the melodies flow</string>
+    <string name="agrement_dialog">In order to proceed with uploading your music to our application, we kindly request that you carefully read and agree to our terms and conditions. These terms serve as the guidelines and rules governing the usage of our platform, ensuring a safe and enjoyable experience for all users.\n\n By agreeing to these terms, you confirm that you hold the necessary rights or permissions to distribute the music you are uploading. It\'s essential to review important topics such as copyright, content guidelines, and privacy. which can be found below this message. We appreciate your cooperation and look forward to sharing your music with our community.</string>
+    <string name="terms_condition">Welcome to our music application MULAY. These Terms and Conditions govern your access to and use of the Application.\nBy accessing or using the Application, you agree to be bound by these Terms.\nIf you do not agree to these Terms, please refrain from using the Application.\n\n User Eligibility:\na. The Application is intended for use by individuals who are at least 13 years old.\nIf you are under the age of 13, you may not use the Application without parental or guardian consent.\nb. If you are using the Application on behalf of a company or organization, you represent and warrant that you have the authority to bind that company or organization to these Terms.\n\n Intellectual Property:\na. The Application and all its content, including but not limited to text, images, graphics, logos, and audio, are protected by intellectual property rights and are the property of the Application owner or its licensors.\nb. You may not modify, distribute, reproduce, publish, license, create derivative works from, transfer, or sell any content obtained from the Application without prior written consent.\n\n User Content:\na. The Application may allow you to upload, post, or share content, including music, playlists, and other materials.\nb. By uploading or sharing User Content, you grant the Application owner a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, modify, adapt, publish, translate, distribute, perform, and display the User Content in connection with the operation of the Application.\nc. You are solely responsible for your User Content and ensure that it does not violate any third-party rights or any applicable laws.\n\n Prohibited Conduct:\na. You agree not to use the Application for any unlawful or unauthorized purpose.\nb. You will not upload, post, transmit, or share any content that is defamatory, abusive, obscene, or offensive.\nc. You will not interfere with or disrupt the functioning of the Application or its associated servers or networks.\nd. You will not attempt to gain unauthorized access to any part of the Application or its systems.\n\n Termination:\na. The Application owner reserves the right to suspend, terminate, or restrict your access to the Application at any time, without prior notice, for any reason.\nb. Upon termination, all licenses and rights granted to you under these Terms will cease.\n\n Disclaimer of Warranties:\na. The Application is provided on an as is and as available basis without any warranties, express or implied.\nb. The Application owner does not warrant that the Application will be error-free, uninterrupted, or secure.\n\n Limitation of Liability:\na. The Application owner shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use or inability to use the Application.\n\n Modifications to the Terms:\na. The Application owner reserves the right to modify or update these Terms at any time.\nb. It is your responsibility to review these Terms periodically for any changes.\n\n By using the Application, you acknowledge that you have read, understood, and agreed to be bound by these Terms and Conditions.</string>
+    <string-array name="searchText">
+        <item>What do you want to listen today?</item>
+        <item>What is your mood for music today</item>
+        <item>Explore your music preferences</item>
+        <item>Find the perfect soundtrack</item>
+        <item>Tell us your musical taste</item>
+        <item>Discover your next favorite song</item>
+        <item>Search for your favorite tunes</item>
+        <item>Lets find your jam</item>
+        <item>Music tailored to your taste</item>
+        <item>Customize your music experience</item>
+        <item>What genre are you in the mood for?</item>
+        <item>What kind of music suits your vibe?</item>
+        <item>Let us curate your musical journey</item>
+        <item>Enter your favorite artists or genres</item>
+        <item>Get personalized music recommendations</item>
+        <item>Search for the perfect song</item>
+    </string-array>
+    <string-array name="makeIt">
+        <item>Switch to make it public</item>
+        <item>Switch to make it private</item>
+    </string-array>
+    <string-array name="loginGreet">
+        <item>Let the rhythm guide you on your musical journey. Enjoy the melodies!</item>
+        <item>Let the music continue to accompany your every step.</item>
+        <item>With our music app, the world of melodies is yours to explore and savor</item>
+        <item>Explore diverse genres and uncover the soundtrack to your life.</item>
+        <item>Escape into a musical oasis where every note tells a story.</item>
+        <item>Immerse yourself in a symphony of sounds and let the music move you.</item>
+        <item>Discover your musical muse and let it inspire your day.</item>
+        <item>Find solace in the melodies and let the rhythm heal your spirit.</item>
+    </string-array>
+    <string-array name="registerGreet">
+        <item>Welcome, new user! Let the music begin! Enjoy your musical journey with us.</item>
+        <item>Get ready to embark on a melodic journey with us. Let the rhythm guide your soul and enjoy the unforgettable tunes we have in store for you!</item>
+        <item>Get ready to groove and discover the perfect beats tailored just for you. Enjoy the journey!</item>
+    </string-array>
+    <string-array name="genreSpinner">
+        <item>Pop</item>
+        <item>Indonesian</item>
+        <item>Hip Hop</item>
+        <item>J - Pop</item>
+        <item>K - Pop</item>
+        <item>Rock</item>
+        <item>Jazz</item>
+        <item>Classic</item>
+    </string-array>
+    <string-array name="pronounsSpiner">
+        <item>He/Him</item>
+        <item>She/Her</item>
+        <item>They/Them</item>
+        <item>We/They</item>
+        <item>Ja/Wir</item>
+    </string-array>
+    <string-array name="uploadPublicity">
+        <item>Enhance your music experience by making it publicly accessible. Adjust the switch to allow your music to be displayed in public and reach a wider audience.</item>
+        <item>Diminish your music experience by making it privately accessible.Modify the switch to restrict your music from being displayed publicly, limiting its reach to a narrower audience.</item>
+    </string-array>
+</resources>

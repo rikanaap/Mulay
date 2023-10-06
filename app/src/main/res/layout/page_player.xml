@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activity.PagePlayer">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:id="@+id/motionLayoutPLayer"
+        app:layoutDescription="@xml/page_player_scene">
+        <TextView
+            android:id="@+id/topTitleBreakSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/inter_extrabold"
+            android:text="MULAY"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageSetMusicCoverPlayer"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_margin="15dp"
+            app:shapeAppearanceOverlay="@style/allRoundRadius"
+            android:src="@drawable/image_playlist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topTitleBreakSection" />
+
+        <LinearLayout
+            android:id="@+id/middleTitleSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/imageSetMusicCoverPlayer"
+            app:layout_constraintStart_toStartOf="@id/imageSetMusicCoverPlayer"
+            app:layout_constraintTop_toBottomOf="@id/imageSetMusicCoverPlayer">
+
+            <TextView
+                android:id="@+id/textSetMusicTitlePlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLACKPINK - SQUARE"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textSetMusicPublisherPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:includeFontPadding="false"
+                android:text="Rikanaap"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/middlePlayerSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/middleTitleSection">
+
+            <SeekBar
+                android:id="@+id/seekBarPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:progress="20"
+                android:progressTint="@color/white"
+                android:thumbTint="@color/white"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSetPlayerDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="00.00"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="@id/seekBarPlayer"
+                app:layout_constraintTop_toBottomOf="@id/seekBarPlayer" />
+
+            <TextView
+                android:id="@+id/textSetMusicDurationPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.00"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="@id/seekBarPlayer"
+                app:layout_constraintTop_toBottomOf="@id/seekBarPlayer" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearMediaPlayerSection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_player"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            app:layout_constraintEnd_toEndOf="@id/middlePlayerSection"
+            app:layout_constraintStart_toStartOf="@id/middlePlayerSection"
+            app:layout_constraintTop_toBottomOf="@id/middlePlayerSection">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imagePlayerMute"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/ic_player_speaker" />
+
+                <ImageView
+                    android:id="@+id/imagePlayerBackward"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintTop_toTopOf="@id/imagePlayerPlayPause"
+                    app:layout_constraintBottom_toBottomOf="@id/imagePlayerPlayPause"
+                    app:layout_constraintEnd_toStartOf="@id/imagePlayerPlayPause"
+                    android:src="@drawable/ic_player_backward" />
+
+                <ImageView
+                    android:id="@+id/imagePlayerPlayPause"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/ic_player_pause" />
+
+                <ImageView
+                    android:id="@+id/imagePlayerForward"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toTopOf="@id/imagePlayerPlayPause"
+                    app:layout_constraintBottom_toBottomOf="@id/imagePlayerPlayPause"
+                    app:layout_constraintStart_toEndOf="@id/imagePlayerPlayPause"
+                    android:src="@drawable/ic_player_forward" />
+
+                <ImageView
+                    android:id="@+id/imagePlayerLooping"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/ic_player_loop" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearBottomLyricsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_linear_reverse"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_player_lyrics" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabLayoutLyricsPlayer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:tabIndicatorColor="@color/green"
+                        app:tabIndicatorHeight="2dp"
+                        app:tabMode="fixed"
+                        app:tabTextAppearance="@style/tabLayoutLyrics"
+                        app:tabTextColor="@color/white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/dropDownLyrics"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_player_pull" />
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewLyricsPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/playerProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:SpinKit_Color="@color/green"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/black"
+        style="@style/SpinKitView.Wave"
+        android:layout_gravity="center" />
+</androidx.constraintlayout.widget.ConstraintLayout>

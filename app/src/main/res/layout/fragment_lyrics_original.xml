@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.LyricsPage.OriginalLyricsPage">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textSetLyricsOriginal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingLeft="15dp"
+                android:text="DDDD - Lisa's rap cut...\n
+Wonhal ttaen daenoko ppaetjiNeon\n
+mwol haedo kallo mul begiDu sonen\n
+ gadeukan fat checkGunggeumhamyeon\n
+haebwa fact checkNun nopin kkokdaegi\n
+Mul mannan mulgogiJom dokae nan\n
+ToxicYou hokae I`m Foxy\n
+...\n
+DDDD - Jennie's rap cut\n
+...\n
+Jigeum naega georeoganeun georin\n
+BLACKPINK 4 way sageori\n
+Dongseonambuk sabangeuro run it\n
+Need a bucket list ssak da I bought it\n
+Neol danggineun geotdo"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
